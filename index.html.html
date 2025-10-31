@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aerostatic Shipyards Inc.</title>
+  <meta name="description" content="Canadian aerospace company leading the global resurgence of lighter than air flight through clean fuel, thermostatic airship design.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #203048;
+      --fg: #ffffff;
+      --muted: #cfd7e6;
+      --accent: #a8c2ff;
+      --maxw: 900px;
+      --font-ui: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      --font-head: "Montserrat", var(--font-ui);
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      color: var(--fg);
+      background: var(--bg);
+      font-family: var(--font-ui);
+      line-height: 1.45;
+      display: grid;
+      place-items: center;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      width: 100%;
+      max-width: var(--maxw);
+      padding: clamp(24px, 4vw, 56px);
+      text-align: center;
+    }
+    .brand {
+      font-family: var(--font-head);
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-size: clamp(22px, 3.2vw, 34px);
+      margin: 0;
+    }
+    .tag {
+      font-family: var(--font-head);
+      font-weight: 400;
+      font-size: clamp(14px, 2.2vw, 18px);
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      margin-top: 2px;
+    }
+    .divider {
+      width: 88px;
+      height: 2px;
+      margin: 6px auto 0;
+      background: var(--fg);
+      opacity: .25;
+    }
+    .mission {
+      font-size: clamp(16px, 2.3vw, 19px);
+      max-width: 70ch;
+      margin: 0 auto;
+    }
+    .htd {
+      font-size: clamp(15px, 2.1vw, 18px);
+      color: var(--muted);
+      margin-top: 6px;
+    }
+    .contact {
+      margin-top: 14px;
+      font-size: clamp(15px, 2vw, 18px);
+    }
+    .contact a {
+      color: var(--fg);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,.35);
+      transition: border-color .2s ease, color .2s ease;
+    }
+    .contact a:hover,
+    .contact a:focus {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+    .partners {
+      display: grid;
+      gap: 8px;
+      place-items: center;
+      margin-top: 18px;
+    }
+    .partner-badge {
+      font-size: 14px;
+      color: var(--muted);
+      letter-spacing: 0.03em;
+    }
+    .partner-logos img {
+      height: 44px;
+      width: auto;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 2px;
+    }
+    .foot {
+      margin-top: 18px;
+      font-size: 13px;
+      color: rgba(255,255,255,.6);
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main">
+    <section class="card" aria-label="Aerostatic Shipyards">
+      <h1 class="brand">Aerostatic Shipyards Inc.</h1>
+      <p class="tag">The New Airshipwrights</p>
+      <div class="divider" aria-hidden="true"></div>
+      <p class="mission">
+        We are bringing buoyant flight back to the modern world. Aerostatic Shipyards designs sustainable airships and hybrid lift systems that unite proven lighter than air principles with clean fuel innovation. Our focus is quiet operation, low emissions, and endurance suitable for real commercial missions.
+      </p>
+      <p class="htd">
+        HTD 1 is a thermostatic hybrid airship that combines a helium envelope with internal heated air ballonets to control lift without ballast or helium venting. A single propane supply powers propulsion and the heating system. The result is stable engine off hovering, very low noise, and precise altitude control for tourism, observation, and research.
+      </p>
+      <p class="contact">
+        <a href="mailto:info@aerostaticshipyards.ca">info@aerostaticshipyards.ca</a>
+      </p>
+      <div class="partners" aria-label="Partners">
+        <div class="partner-badge">Official research partner</div>
+        <div class="partner-logos">
+          <img src="Centennial_College_Logo.jpg" alt="Centennial College logo">
+        </div>
+      </div>
+      <p class="foot" aria-hidden="true">© Aerostatic Shipyards Inc.</p>
+    </section>
+  </main>
+</body>
+</html>
